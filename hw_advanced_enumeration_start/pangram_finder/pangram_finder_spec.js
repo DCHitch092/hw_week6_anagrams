@@ -22,7 +22,7 @@ describe('PangramFinder', function () {
     assert.strictEqual(pangramFinder.isPangram(), false);
   });
 
-  xit('should be able to detect a pangram with special characters', function () {
+  it('should be able to detect a pangram with special characters', function () {
     const pangramFinder = new PangramFinder('how_vexingly_quick_daft_zebras_jump!');
     assert.strictEqual(pangramFinder.isPangram(), true);
   });
