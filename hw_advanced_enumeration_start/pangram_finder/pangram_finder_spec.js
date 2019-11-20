@@ -17,7 +17,7 @@ describe('PangramFinder', function () {
     assert.strictEqual(pangramFinder.isPangram(), true);
   });
 
-  xit('should be able to detect a non-pangram with mixed case', function () {
+  it('should be able to detect a non-pangram with mixed case', function () {
     const pangramFinder = new PangramFinder('AGaIn ThIs Is NOt a PanGram as It DOeS NoT COnTaIn aLL the LetTerS oF THE ALPhaBet');
     assert.strictEqual(pangramFinder.isPangram(), false);
   });
